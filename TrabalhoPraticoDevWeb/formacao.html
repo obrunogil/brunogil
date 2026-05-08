@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> //adicionado aqui por conta da página carregar o tema branco default algumas vezes e piscar
+        if (localStorage.getItem('tema-escolhido') === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo - Bruno Gil</h1>
+        <div class="controles-tema">
+            <button id="btn-claro" class="btn-tema">Tema Claro</button>
+            <button id="btn-escuro" class="btn-tema">Tema Escuro</button>
+        </div>
+    </header>
+    <nav class="menu-opcoes">
+        <a href="sobre.html" class="card"><h3>Sobre mim</h3></a>
+        <a href="formacao.html" class="card active"><h3>Formação</h3></a>
+        <a href="portfolio.html" class="card"><h3>Portfólio</h3></a>
+        <a href="contato.html" class="card"><h3>Contato</h3></a>
+    </nav>
+    
+    <section id="formacao" class="content-section">
+        <h2>Cursos</h2>
+        <ul>
+            <li> Excel para análise de dados</li>
+            <li> Qlik Sense Intermediário</li>
+            <li> Ciclo básico de Engenharia de Produção pelo IMT</li>
+            <li> Formado em Gastronomia pela Anhembi Morumbi</li>
+        </ul>
+        <h2>Idiomas</h2>
+        <ul>
+            <li> Português Nativo</li>
+            <li> Inglês Fluente</li>
+            <li> Espanhol Básico</li>
+        </ul>
+        <h2>Formações Recentes</h2>
+        <ul>
+            <li> Estudante de Ciência de Dados pela UNINTER</li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

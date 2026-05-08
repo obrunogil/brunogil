@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> //adicionado aqui por conta da página carregar o tema branco default algumas vezes e piscar
+        if (localStorage.getItem('tema-escolhido') === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo - Bruno Gil</h1>
+        <div class="controles-tema">
+            <button id="btn-claro" class="btn-tema">Tema Claro</button>
+            <button id="btn-escuro" class="btn-tema">Tema Escuro</button>
+        </div>
+    </header>
+    <nav class="menu-opcoes">
+        <a href="sobre.html" class="card"><h3>Sobre mim</h3></a>
+        <a href="formacao.html" class="card"><h3>Formação</h3></a>
+        <a href="portfolio.html" class="card"><h3>Portfólio</h3></a>
+        <a href="contato.html" class="card active"><h3>Contato</h3></a>
+    </nav>
+    
+    <section id="contato" class="content-section"> <!--criação do formulário de envio-->
+        <h2>Contato</h2>
+        <form id="contact-form" novalidate>
+            <div class="group-form"> <!--caixa de input para 1 linha só-->
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" maxlength="60" placeholder="Digite seu nome completo aqui">
+            </div>
+
+            <div class="group-form">
+                <label for="email">Seu melhor email: </label>
+                <input type="email" id="email" maxlength="60" placeholder="mecontate@dominio.com">
+            </div>
+
+            <div class="group-form"> <!--caixa de texto para escrita maior-->
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="5" maxlength="800" placeholder="Escreva sua mensagem de contato."></textarea>
+            </div>
+
+            <button type="submit" id="button-enviar">Enviar</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> //adicionado aqui por conta da página carregar o tema branco default algumas vezes e piscar
+        if (localStorage.getItem('tema-escolhido') === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo Online</title>
+    <link rel="stylesheet" href="style.css"> <!---chamando o pacote CSS-->
+</head>
+<body>
+    <header>
+        <h1>Currículo - Bruno Gil</h1>
+        <div class="controles-tema"> <!--botões que fazem o controle dos temas-->
+            <button id="btn-claro" class="btn-tema">Tema Claro</button>
+            <button id="btn-escuro" class="btn-tema">Tema Escuro</button>
+        </div>
+    </header>
+    <nav class="menu-opcoes"> <!--Menu que vai fazer a navegação entre os sites/arquivos-->
+        <a href="sobre.html" class="card active"><h3>Sobre mim</h3></a>
+        <a href="formacao.html" class="card"><h3>Formação</h3></a>
+        <a href="portfolio.html" class="card"><h3>Portfólio</h3></a>
+        <a href="contato.html" class="card"><h3>Contato</h3></a>
+    </nav>
+
+    <main>
+        <section id="sobre" class="content-section"> 
+            <h2>Informações pessoais</h2>
+            <ul>
+                <li>32 Anos, residente em São Paulo</li>
+                <li>Estudante de Ciência de Dados</li>
+                <li>Estágiario de Performance Marketing</li>
+            </ul>
+            <h2>Hobbies</h2>
+                <p>Meus hobbies são conhecer novos restaurantes, assistir séries, principalmente nas estilo Ruptura, Slow Horses e Fundação. Também sou apaixonado por cozinhar e jogar tênis de mesa.</p><br>
+            <h2>Apresentação</h2>
+                <p>Olá! Meu nome é Bruno Gil, tenho 32 anos e estou em transição de carreira para a área de dados. Atualmente sou estágiario na Leroy Merlin na área de Dados de Marketing.</p><br>
+                <p>Sou formado em Gastronomia, tenho ciclo básico de Engenharia de Produção e já fiz um ano de intercâmbio na Europa.</p><br>
+                <p>Sou um profissional muito comunicativo, tive experiência como recenseador do IBGE no Censo 2022/23, atuei fazendo mais de 800 entrevistas na região de central e oeste de São Paulo.</p>
+
+        </section>
+    </main>
+    <script src="script.js"></script> <!---chamada do arquivo do javascript-->
+</body>
+</html>

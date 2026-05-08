@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script> //adicionado aqui por conta da página carregar o tema branco default algumas vezes e piscar
+        if (localStorage.getItem('tema-escolhido') === 'dark') {
+            document.documentElement.classList.add('dark-theme');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo - Bruno Gil</h1>
+        <div class="controles-tema">
+            <button id="btn-claro" class="btn-tema">Tema Claro</button>
+            <button id="btn-escuro" class="btn-tema">Tema Escuro</button>
+        </div>
+    </header>
+    <nav class="menu-opcoes">
+        <a href="sobre.html" class="card"><h3>Sobre mim</h3></a>
+        <a href="formacao.html" class="card"><h3>Formação</h3></a>
+        <a href="portfolio.html" class="card active"><h3>Portfólio</h3></a>
+        <a href="contato.html" class="card"><h3>Contato</h3></a>
+    </nav>
+    
+    <section id="portfolio" class="content-section">
+        <h2>Portfólio</h2>
+        <p>Atualmente atuo com o acompanhamento de KPIs geral da Leroy Merlin.</p><br>
+        <p>Fui gerente de uma academia do Grupo Smart Fit, e de forma autodidata criei um dashboard no PowerBI para acompanhamento da ocupação em salas, gerando uma visão rápida e certeira de gargalos e eficiência da operação.</p><br>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
